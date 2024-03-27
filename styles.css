@@ -16,6 +16,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
+    background-color: rgb(149, 66, 226);
 }
 
 h1, h2, h3 {
@@ -24,7 +25,7 @@ h1, h2, h3 {
 }
 
 nav {
-    background-color: #444;
+    background-color: #fcb8f6;
     color: #fff;
     padding: 10px;
 }
