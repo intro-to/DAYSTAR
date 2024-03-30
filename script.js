@@ -29,3 +29,7 @@ sitterForm.addEventListener('submit', async (event) => {
 
 // Initial fetch of sitters
 fetchSitters();
+
+function goBack() {
+  window.history.back();
+}

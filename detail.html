@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitter Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fc881cf5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        padding: 20px;
+      }
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="time"],
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="sitterDetailsForm">
+        <h2>Sitter Details</h2>
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input
+          type="time"
+          id="arrivalTime"
+          name="arrivalTime"
+          placeholder="Arrival Time"
+          required
+        />
+        <input
+          type="number"
+          id="numberOfBabies"
+          name="numberOfBabies"
+          placeholder="Number of Babies"
+          required
+        />
+        <input
+          type="number"
+          id="hoursWorked"
+          name="hoursWorked"
+          placeholder="Hours Worked"
+          required
+        />
+        <input
+          type="time"
+          id="timeOut"
+          name="timeOut"
+          placeholder="Time Out"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("sitterDetailsForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Get the values from the form
+          var name = document.getElementById("name").value;
+          var arrivalTime = document.getElementById("arrivalTime").value;
+          var numberOfBabies = document.getElementById("numberOfBabies").value;
+          var hoursWorked = document.getElementById("hoursWorked").value;
+          var timeOut = document.getElementById("timeOut").value;
+
+          // Here, you can do something with the form data, such as sending it to a server or processing it locally
+          // For this example, we'll just log the data to the console
+          console.log("Name:", name);
+          console.log("Arrival Time:", arrivalTime);
+          console.log("Number of Babies:", numberOfBabies);
+          console.log("Hours Worked:", hoursWorked);
+          console.log("Time Out:", timeOut);
+
+          // Optionally, you can reset the form after submission
+          // document.getElementById("sitterDetailsForm").reset();
+        });
+    </script>
+  </body>
+</html>

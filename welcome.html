@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        background-color: #07edf5;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: deeppink;
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        cursor: pointer;
+      }
+      .icon img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+      .icon p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome!</h1>
+      <div class="icons">
+        <div class="icon" id="sitterIcon">
+          <img src="sitter_icon.png" alt="Sitter" />
+          <p>Sitter</p>
+        </div>
+        <div class="icon" id="adminIcon">
+          <img src="admin_icon.png" alt="Admin" />
+          <p>Admin</p>
+        </div>
+        <div class="icon" id="parentIcon">
+          <img src="parent_icon.png" alt="Parent" />
+          <p>Parent</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Add click event listeners to each icon
+      document
+        .getElementById("sitterIcon")
+        .addEventListener("click", function () {
+          window.location.href = "sittersign.html"; // Redirect to sitter sign-in page
+        });
+      document
+        .getElementById("adminIcon")
+        .addEventListener("click", function () {
+          window.location.href = "sign.html"; // Redirect to admin sign-in page
+        });
+      document
+        .getElementById("parentIcon")
+        .addEventListener("click", function () {
+          window.location.href = "parentsign.html"; // Redirect to parent sign-in page
+        });
+    </script>
+  </body>
+</html>

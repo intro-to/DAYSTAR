@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(248, 48, 248);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        padding: 20px;
+      }
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="tel"],
+      select,
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #9c9797;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #21e027;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #12f01e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="parentDetailsForm">
+        <h2>Parent Details</h2>
+        <input
+          type="text"
+          id="parentName"
+          name="parentName"
+          placeholder="Parent Name"
+          required
+        />
+        <input
+          type="number"
+          id="parentAge"
+          name="parentAge"
+          placeholder="Parent Age"
+          required
+        />
+        <select id="parentSex" name="parentSex" required>
+          <option value="">Select Sex</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          type="text"
+          id="parentLocation"
+          name="parentLocation"
+          placeholder="Location"
+          required
+        />
+        <input
+          type="text"
+          id="parentNIN"
+          name="parentNIN"
+          placeholder="National Identification Number (NIN)"
+          required
+        />
+        <input
+          type="tel"
+          id="parentContact"
+          name="parentContact"
+          placeholder="Contact Number"
+          required
+        />
+        <input
+          type="tel"
+          id="emergencyContact"
+          name="emergencyContact"
+          placeholder="Emergency Contact"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("parentDetailsForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Get the values from the form
+          var parentName = document.getElementById("parentName").value;
+          var parentAge = document.getElementById("parentAge").value;
+          var parentSex = document.getElementById("parentSex").value;
+          var parentLocation = document.getElementById("parentLocation").value;
+          var parentNIN = document.getElementById("parentNIN").value;
+          var parentContact = document.getElementById("parentContact").value;
+          var emergencyContact =
+            document.getElementById("emergencyContact").value;
+
+          // Here, you can do something with the form data, such as sending it to a server or processing it locally
+          // For this example, we'll just log the data to the console
+          console.log("Parent Name:", parentName);
+          console.log("Parent Age:", parentAge);
+          console.log("Parent Sex:", parentSex);
+          console.log("Location:", parentLocation);
+          console.log("NIN:", parentNIN);
+          console.log("Contact Number:", parentContact);
+          console.log("Emergency Contact:", emergencyContact);
+
+          // Optionally, you can reset the form after submission
+          // document.getElementById("parentDetailsForm").reset();
+        });
+    </script>
+  </body>
+</html>
