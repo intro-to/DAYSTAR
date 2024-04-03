@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-in Form</title>
+    <link rel="stylesheet" href="checkin.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h2>Check-in form</h2>
+    <form id="check-in form">
+       <div>
+          <label for="checkin_time">Check-in Time:</label>
+          <input type="time" id="time_in" name="time_in" min="0" />
+        </div>
+        <div>
+          <label for="babies">Number of Babies:</label>
+          <input type="number" id="babies" name="babies" min="1" required />
+        </div>
+        <div>
+          <label for="babies_assigned">Babies Assigned:</label>
+          <input
+            type="number"
+            id="babies_assigned"
+            name="babies_assigned"
+            min="0"
+          />
+        </div>
+        <div>
+          <label for="time_in">Time of Stay (in hours):</label>
+          <input type="number" id="time_in" name="time_in" min="0" />
+        </div>
+        <div>
+          <label for="time_out">Time Out:</label>
+          <input type="time" id="time_out" name="time_out" />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+    <script src="checkin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dastar Dolls</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+      }
+      .product {
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .product-image {
+        flex: 0 0 150px;
+        border-radius: 8px 0 0 8px;
+      }
+      .product-details {
+        flex: 1;
+        padding: 20px;
+      }
+      .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px 0 0 8px;
+      }
+      .product-title {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .product-price {
+        font-size: 16px;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+      .buy-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .buy-button:hover {
+        background-color: #45a049;
+      }
+      .delivery-info {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #777;
+      }
+      .seller-info {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <div class="product-image">
+        <img src="./images/doll.jpeg" alt="doll" />
+      </div>
+      <div class="product-details">
+        <div id="1">
+          <div class="product-title">Doll</div>
+          <div class="product-price">$19.99</div>
+          <button class="buy-button">Buy Now</button>
+          <div class="delivery-info">
+            <h3>Delivery & Returns</h3>
+            <p>Express delivery in main cities. Details</p>
+            <h4>Choose your location</h4>
+            <ul>
+              <li>Kampala Region</li>
+              <ul>
+                <li>Central Business District</li>
+                <ul>
+                  <li>Pickup Station</li>
+                  <li>Delivery Fees UGX 1,900</li>
+                  <li>
+                    Pickup by 03 April when you order within next 16hrs 52mins
+                  </li>
+                </ul>
+                <li>Door Delivery</li>
+                <ul>
+                  <li>Delivery Fees UGX 3,000</li>
+                  <li>
+                    Delivery by 03 April when you order within next 16hrs 52mins
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+            <h3>Return Policy</h3>
+            <p>Free return within 7 days for eligible items. Details</p>
+          </div>
+          <div class="seller-info">
+            <h3>Seller Information</h3>
+            <p>SMARK-SEA-COD</p>
+            <p>80% Seller Score</p>
+            <p>59 Followers</p>
+            <button>Follow</button>
+            <h4>Seller Performance</h4>
+            <p>Order Fulfillment Rate: Excellent</p>
+            <p>Quality Score: Good</p>
+            <p>Customer Rating: Average</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more products as needed -->
+
+    <script>
+      // Get all toggle headings
+      var toggleHeadings = document.querySelectorAll(".toggle-heading");
+
+      // Add click event listener to each toggle heading
+      toggleHeadings.forEach(function (heading) {
+        heading.addEventListener("click", function () {
+          // Toggle the display of the next sibling element (the section to show/hide)
+          var section = heading.nextElementSibling;
+          if (section.style.display === "none") {
+            section.style.display = "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
