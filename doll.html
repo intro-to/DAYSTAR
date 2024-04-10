@@ -59,6 +59,28 @@
         margin-top: 10px;
         font-size: 14px;
       }
+      .add-to-cart-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .add-to-cart-button:hover {
+        background-color: #45a049;
+      }
+      .chat-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .chat-button:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
@@ -108,10 +130,15 @@
             <p>Order Fulfillment Rate: Excellent</p>
             <p>Quality Score: Good</p>
             <p>Customer Rating: Average</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+            <button class="chat-button" onclick="window.location.href='chat.html'">
+              Chat
+            </button>
           </div>
         </div>
       </div>
     </div>
+   
 
     <!-- Add more products as needed -->
 
@@ -129,6 +156,23 @@
           } else {
             section.style.display = "none";
           }
+          // Function to handle adding the product to cart
+          function addToCart() {
+            // You can add your logic here to add the product to the cart
+            alert("Product added to cart!");
+          }
+
+          // Get all "Add to Cart" buttons
+          var addToCartButtons = document.querySelectorAll(
+            ".add-to-cart-button"
+          );
+
+          // Add click event listener to each button
+          addToCartButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+              addToCart();
+            });
+          });
         });
       });
     </script>

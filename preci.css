@@ -9,7 +9,7 @@
 .product {
     width: calc(33.33% - 20px); /* Set the width of each product container */
     margin-bottom: 20px;
-    background-color: #fca503;
+    background-color: rgb(149, 66, 226);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
