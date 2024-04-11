@@ -8,7 +8,7 @@ body {
   .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #e946c6;
+    background-color: #D90077;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -33,12 +33,12 @@ body {
   select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #FBBEDE;
     border-radius: 3px;
   }
   
   button[type="submit"] {
-    background-color: #4caf50;
+    background-color: #8800C7;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -47,6 +47,6 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #a44cd3;
   }
   

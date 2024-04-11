@@ -12,7 +12,7 @@ form {
 .container {
     max-width: 400px;
     margin: 50px auto;
-    background-color: #e946c6;
+    background-color: #D90077;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -24,7 +24,7 @@ label {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #8800CF;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -32,5 +32,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #FBBEDE;
 }

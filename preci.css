@@ -9,7 +9,7 @@
 .product {
     width: calc(33.33% - 20px); /* Set the width of each product container */
     margin-bottom: 20px;
-    background-color: rgb(149, 66, 226);
+    background-color:#8800C7;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -32,7 +32,7 @@
 
 .buy-button {
     margin-top: 10px;
-    background-color: #4caf50;
+    background-color: #D90077;
     color: white;
     border: none;
     border-radius: 5px;

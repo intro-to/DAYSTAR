@@ -11,7 +11,7 @@ body {
     max-width:500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #e946c6;
+    background-color: #D90077;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +32,7 @@ li {
 a {
     display: block;
     padding: 10px;
-    background-color: #8df590;
+    background-color: #A44CD3;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-    background-color: #10f71c;
+    background-color: #A44CD3;
 }
 
 .form-group {
@@ -63,7 +63,7 @@ select {
 }
 
 button[type="submit"] {
-    background-color: #06a2fd;
+    background-color: #8800C7;
     color: #fff;
     border: none;
     padding: 10px 10px;
@@ -72,10 +72,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0384fd;
+    background-color: #FBBEDE;
 }
 
 .message {
-    color: red;
+    color:#E090DF;
     margin-top: 5px;
 }

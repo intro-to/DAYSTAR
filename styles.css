@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    /* background-color: #333; */
     color: #fffdfd;
     padding: 20px;
     text-align: center;
@@ -16,7 +16,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: rgb(149, 66, 226);
+    background-color:#E090DF;
 }
 
 h1, h2, h3 {
@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 nav {
-    background-color:#e946c6 ;
+    background-color:#D90077 ;
     color: #fff;
     padding: 10px;
 }
@@ -85,7 +85,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #8800c7;
     color: #fff;
     padding: 10px;
     text-align: center;
