@@ -3,104 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jumia Products</title>
+    <title>Sell Your Item</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
+      /* CSS styling */
+      .form-container {
+        max-width: 500px;
+        margin: auto;
       }
-      .product {
-        display: flex;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      .form-group {
         margin-bottom: 20px;
       }
-      .product-image {
-        flex: 0 0 150px;
-        border-radius: 8px 0 0 8px;
+      .form-group label {
+        display: block;
+        font-weight: bold;
       }
-      .product-details {
-        flex: 1;
-        padding: 20px;
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
       }
-      .product img {
+      .form-group img {
         max-width: 100%;
         height: auto;
-        border-radius: 8px 0 0 8px;
-      }
-      .product-title {
-        font-size: 18px;
-        margin: 10px 0;
-      }
-      .product-price {
-        font-size: 16px;
-        color: #007bff;
         margin-bottom: 10px;
       }
-      .add-to-cart-button {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      .add-to-cart-button:hover {
-        background-color: #45a049;
-      }
-      .chat-button {
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
         background-color: #007bff;
-        color: white;
+        color: #fff;
         border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
+        border-radius: 5px;
         cursor: pointer;
-      }
-      .chat-button:hover {
-        background-color: #0056b3;
       }
     </style>
   </head>
   <body>
-    <div class="product">
-      <div class="product-image">
-        <img src="product1.jpg" alt="Product 1" />
-      </div>
-      <div class="product-details">
-        <div class="product-title">
-          Women Bags Ladies Bags Handbags Purse Shoulder Bags Female Bags
-          Crossbody Bags
+    <div class="form-container">
+      <form id="sellForm" action="#" method="post">
+        <div class="form-group">
+          <label for="itemName">Name of Item:</label>
+          <input type="text" id="itemName" name="itemName" required />
         </div>
-        <div class="product-price">UGX 49,890</div>
-        <div class="original-price">UGX 97,824</div>
-        <div class="discount">49% off</div>
-        <button class="add-to-cart-button">Add to Cart</button>
-        <button class="chat-button" onclick="window.location.href='chat.html'">
-          Chat
-        </button>
-      </div>
+        <div class="form-group">
+          <label for="itemImage">Image of Item:</label>
+          <input
+            type="file"
+            id="itemImage"
+            name="itemImage"
+            accept="image/*"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="itemPrice">Price:</label>
+          <input type="number" id="itemPrice" name="itemPrice" required />
+        </div>
+        <div class="form-group">
+          <label for="seller">Seller:</label>
+          <input type="text" id="seller" name="seller" required />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Sell</button>
+      </form>
     </div>
-
-    <!-- Add more products as needed -->
-
-    <script>
-      // Function to handle adding the product to cart
-      function addToCart() {
-        // You can add your logic here to add the product to the cart
-        alert("Product added to cart!");
-      }
-
-      // Get all "Add to Cart" buttons
-      var addToCartButtons = document.querySelectorAll(".add-to-cart-button");
-
-      // Add click event listener to each button
-      addToCartButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          addToCart();
-        });
-      });
-    </script>
   </body>
 </html>
